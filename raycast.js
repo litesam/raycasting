@@ -49,7 +49,6 @@ class Map {
   render() {
     for (let i = 0; i < NO_OF_ROWS; i++) {
       for (let j = 0; j < NO_OF_COLUMNS; j++) {
-        let tileColor = (this.grid[i][j] == 1 ? "#111" : "#fff");
 
         stroke("#111");
         if (this.grid[i][j] == 1) {
@@ -60,7 +59,7 @@ class Map {
             TILE_SIZE
           );
         } else {
-          fill(tileColor);
+          fill("#111");
           rect(j * TILE_SIZE,
             i * TILE_SIZE,
             TILE_SIZE,
@@ -226,7 +225,7 @@ class Ray {
     }
   }
   render() {
-    stroke("red");
+    stroke("rgba(246, 246, 244, 0.1)");
     line(
       player.x,
       player.y,
