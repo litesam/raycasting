@@ -1,1 +1,4 @@
 2D
+
+Zoom onto the ray-casting paths or zoom onto some like 400 walls
+(prefer first if fail go 2nd)
